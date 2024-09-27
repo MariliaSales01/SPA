@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Spa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">    
+            <div class="logo">
+                <img src="/assets/plantar.png">
+                <h1>Aura Spa</h1>
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li><a href="#" onclick="showSection('home')">Home</a></li>
+                    <li><a href="#" onclick="showSection('serviços')">Serviços</a></li>
+                    <li><a href="#" onclick="showSection('pacotes')">Pacotes</a></li>
+                </ul>
+            </div>
+            
+            <div class="button">
+                <button><a href="#" onclick="showSection('agendamento')">Agendamento</a></button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="active bg-home">
+            <h1>Transforme Seu Dia em Relaxamento e Bem-Estar.</h1>
+            <button><a href="#">Agende Seu Horário</a></button>
+        </section>
+
+        <section id="serviços" class="hidden">
+            <h1>Nossos serviços</h1>
+                <div class="container-cards">
+                    <div class="card">
+                        <img src="/assets/massagem.jpg">
+                        <div>
+                            <h4>Massagem Relaxante</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi nihil et repudiandae! Deleniti nihil.</p>
+                            <button>Clique aqui</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="/assets/massagem.jpg">
+                        <div>
+                            <h4>Tratamento Facial</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi nihil et repudiandae! Deleniti nihil.</p>
+                            <button>Clique aqui</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="/assets/massagem.jpg">
+                        <div>
+                            <h4>Banhos Termais</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi nihil et repudiandae! Deleniti nihil.</p>
+                            <button>Clique aqui</button>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="pacotes" class="hidden">
+            <h1>Pacotes Especiais</h1>
+                <div class="container-cards">
+                    <div class="card">
+                        <img src="/assets/massagem.jpg">
+                        <div>
+                            <h4>Dia de Spa</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi nihil et repudiandae! Deleniti nihil.</p>
+                            <button>Clique aqui</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="/assets/massagem.jpg">
+                        <div>
+                            <h4>Promoção de Casais</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi nihil et repudiandae! Deleniti nihil.</p>
+                            <button>Clique aqui</button>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="agendamento" class="hidden">
+            <h1>Agendamento</h1>
+            <form>
+                <input type="text" placeholder="Nome">
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Celular">
+                <button>Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
